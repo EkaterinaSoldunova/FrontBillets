@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 4000px;
+        }
+
+        header {
+            width: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 20px 80px;
+            font-size: 40px;
+            margin-top: 0;
+
+            border: 3px solid purple;
+        }
+
+        li {
+            transition: .2s linear;
+        }
+
+        li:hover {
+            color: purple;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="menu">
+        <ul>
+          <li>Описание</li>
+          <li>Услуги</li>
+          <li>Цены</li>
+          <li>Контакты</li>
+        </ul>
+    </header>
+</body>
+</html>

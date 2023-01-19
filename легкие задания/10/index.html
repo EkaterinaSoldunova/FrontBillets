@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задание 10</title> 
+        <style>
+            .text{
+                font-size: 20px;
+            }
+        </style>   
+    </head>
+    <body>
+        <p class="text">Text</p>
+        <button class="minus" onclick="minus()">меньше</button>
+        <button class="plus" onclick="plus()">больше</button>
+    </body>
+    <script>
+        var text = document.querySelector(".text");
+        var size = 20;
+        function minus(){
+            size--;
+            text.style.fontSize = size + 'px';
+        }
+        function plus(){
+            size++;
+            text.style.fontSize = size + 'px';
+        }
+    </script>
+</html>
