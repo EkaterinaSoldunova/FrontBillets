@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задание 5</title>
+        <style>
+            button {
+                width: 250px;
+                height: 30px;
+            }
+
+            .menu {
+                opacity: 0;
+            }
+            .menu a {
+                display: block;
+                text-decoration: none;
+                font-size: 22px;
+                padding: 10px;
+                background-color: pink;
+                width: 228px;
+            }
+        </style>     
+    </head>
+    <body>
+        <button onclick="f()">Меню</button>
+        <div class="menu">
+            <a href="#">Пункт 1</a>
+            <a href="#">Пункт 1</a>
+            <a href="#">Пункт 1</a>
+            <a href="#">Пункт 1</a>
+            <a href="#">Пункт 1</a>
+        </div>
+        <script>
+            var i = 1;
+            var menu = document.querySelector(".menu");
+            function f(){
+                if (i%2==0) {
+                    menu.style.opacity = "0";
+                }
+                else {
+                    menu.style.opacity = "1";
+                }
+                i++;
+            }
+        </script>
+    </body>
+</html>
