@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задание 18</title> 
+        <style>
+            img {
+                width: 300px;
+            }
+        </style>   
+    </head>
+    <body>
+        <img class="image" src="Domestic_Goose.jpg" alt="Гусь" onclick="f()">
+    </body>
+    <script>
+        var width = 300;
+        var plus = true;
+        var image = document.querySelector(".image");
+        function f(){
+            if (width==700){
+                plus = false;
+            }
+            else if (width ==300){
+                plus = true;
+            }
+            if (plus==true){
+                width+=100;
+            }
+            else {
+                width-=100;
+            }
+            image.style.width = width + 'px';
+        }
+    </script>
+</html>

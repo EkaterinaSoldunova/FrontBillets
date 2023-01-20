@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            font-size: 25px;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .rect {
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+        }
+        .text {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="f()">Нажмите</button>
+    <div class="rect"></div>
+    <div class="text">Тут текст</div>
+
+    <script>
+        var i=0;
+        const rect = document.querySelector(".rect");
+
+        function f() {
+            if (i % 2 == 0) rect.style.opacity = "0";
+            else rect.style.opacity = "1";
+            i++;
+        }
+    </script>
+</body>
+</html>
